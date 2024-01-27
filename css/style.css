@@ -1,0 +1,963 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+:root{
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem;
+    --h2-font: 3rem;
+     --p-font: 1.1rem;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+}
+/*NAVIGATION STYLE*/
+nav{
+    display:inline-flex;
+    background-color:beige;
+    height: 100%;
+}
+.pLinks{
+    position: relative;
+}
+nav,.header,.hlinks,.pLinks{
+ display:flex;
+ gap:20px;
+ padding-top:5px;
+ padding-right: 3px;
+ padding-bottom:5px;
+}
+/*COMPANY NAME*/
+.hlinks{
+    color:purple;
+    font-size: 2rem;
+}
+/*NAV LINK*/
+.alinks{
+    display: flex;
+    flex-direction: row;
+    color:purple;
+    font-size:1.1rem;
+    padding: 10px;
+  
+}
+.alinks:hover{
+    background: #ffffffbf;
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 20px;
+}
+/*FORM MODAL*/
+
+/*PROFILE*/
+.menu{
+    display: none;
+}
+.Dash{
+    position: relative;
+    right: -40%;
+}
+.icon{
+    position: absolute;
+    width:50px;
+    height:40px;
+    color: #6e54fa;
+   
+}
+.Dash_Links{
+    display: none;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 75px;
+    background-color: #fefefe;
+  border-radius: 4px;
+  padding: 10px;
+}
+.Dash_Links.actie{
+    display: initial;
+    position: fixed;
+    right: 0%;
+    align-items:center;
+
+}
+/*HERO*/
+.hero{
+    background:url('images/aomine.jpg');
+    width: 100%;
+    overflow:hidden;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.hero-text h1{
+    font-size:5rem;
+    text-align:center;
+    color: rgb(245, 188, 188);
+    display: flex;
+    align-items: center;
+      justify-content: center;
+}
+.hero-text p{
+    font-size: 3rem;
+    color:rgb(245, 160, 160);
+    text-align:flex-start;
+    padding-left: 5%;
+    word-spacing: 10px;
+}
+.try{
+    position: relative;
+    color: red;
+    left: 90px;
+    letter-spacing:5px;
+}
+.hero_btc{
+    color:red;
+    
+    font-size: 16px;
+    margin-top:45px;
+    position:relative;
+    left: 20%;
+    background: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius:20px;
+    transition: 1s ease-in-out;
+}
+.hero_btc:hover{
+    background-color: blue;
+    transform:scale(1.5);
+    border-radius:30px;
+   
+}
+/*MISSION*/
+.mission h1{
+    font-size: 4.5rem;
+    text-align: center;
+    margin:30px;
+}
+.mission-text{
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    word-spacing: 3px;
+}
+/*PACKAGES*/
+.pack h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color:purple;
+    margin:20px;
+}
+
+.Card{
+    padding:5%;
+    overflow: hidden;
+}
+.CardBody{
+   display: flex;
+   position: relative;
+}
+.CardItem{
+    border: 2px solid green;
+    padding:5%;
+   align-items:center;
+   justify-content:center;
+   border-radius: 45px;
+}
+.four{
+    position:relative;
+    left:100%;
+}
+.CardItem img{
+    width: 350px;
+    height: 500px;
+    border-radius: 45px;
+}
+.cardtext{
+    display:block;
+    position:relative;
+    top:0%;
+    left:10%;
+    padding:10px;
+    color:black;
+    font-size:20px;
+}
+.more{
+    position:relative;
+    top:-45%;
+    left:0%;
+    padding:10px;
+ align-items: center;
+ justify-content: center;
+    font-size:15px;
+    color:purple;
+    background:black;
+    border:none;
+    border-radius:10px;
+}
+.more:hover{
+    animation: 1s paulse infinite;
+}
+@keyframes paulse{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5) ;
+    }
+}
+/*REVIEW*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*REVIEW*/
+.review{
+position: relative;
+overflow: hidden;
+}
+.reviewHead{
+    font-size: 4rem;
+    text-align: center;
+
+}
+.reviewBody{
+    display:flex;
+    padding: 3%;
+}
+.reviewItems{
+    border: 5px solid gold;
+    background-color: silver;
+    border-radius: 25px;
+  padding: 15%;
+  margin-left:10px;
+}
+.reviewItems img{
+ width:200px;
+ height:200px;
+ border-radius:105px;
+ align-items: center;
+ border: 3px solid blue;
+ gap:20px;
+ justify-content: center;
+}
+.reviewText{
+    margin-top: 5%;
+    padding: 5%;
+    background:beige;
+    align-items: center;
+}
+.stars{
+    color: gold;
+}
+
+.foote{
+    overflow: hidden;
+    padding: 3%;
+    background-color: #272626;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 100%;
+}
+.footer-body{
+    display: flex;
+    position: relative;
+}
+.footer_caption{
+    color: #4b40ddbf;
+    font-size: 45px;
+}
+.foote_text{
+    width: 500px;
+    color: #fff;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.facebook{
+    background-color: blue;
+    border-radius: 35px;
+    padding: 10px;
+}
+.instagram{
+    background-color: bisque;
+    border-radius: 35px;
+    padding: 10px;
+}
+.twitter{
+    background-color: blue;
+    border-radius: 35px;
+    padding: 10px;
+}
+.youtube{
+    background-color: red;
+    border-radius: 35px;
+    padding: 10px;
+}
+.gmail{
+    background-color: red;
+    border-radius: 35px;
+    padding: 10px;
+}
+.linkedin{
+    background-color: blue;
+    border-radius: 35px;
+    padding: 10px;
+}
+.social:hover{
+    animation: 1s paulse infinite;
+}
+
+.time{
+    display: inline-flex;
+    position: relative;
+    bottom: -20%;
+    left: -200%;
+    color: antiquewhite;
+   
+}
+.contacts{
+    display:flex;
+    color:white;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 20px;
+    margin-bottom: 0;;
+  
+}
+.contacts img{
+    width: 90px;
+    background-color: #fff;
+    border-radius: 20px;
+    gap:20px;
+}
+.contact-text{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    text-align: center;
+    
+}
+.footer-content{
+    display: block;
+}
+.footer_text{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px;
+    margin-bottom: 0;
+    width: 150px;
+}
+
+.footer_text:hover{
+ border-bottom: 3px solid silver ;
+}
+ 
+@media only screen and (max-width: 1024px) {
+   body{
+    width: 100%;
+   }
+ 
+   nav{
+    display:inline-flex;
+    background-color:beige;
+    width: 100%;
+    height: 100%;
+}
+   nav,.header,.hlinks,.alinks{
+    gap:10px;
+   }
+   .hlinks{
+    font-size: 1.5rem;
+   }
+   .alinks{
+    display: flex;
+    color:purple;
+    font-size:1rem;
+    padding: 5px;
+}
+.Dash{
+    position: relative;
+    right: -20px;
+}
+.icon{
+    position: absolute;
+    width:50px;
+    height:40px;
+    right: 20%;
+    color: #6e54fa;
+   
+}
+.Dash_Links{
+    display: none;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 75px;
+    background-color: #fefefe;
+  border-radius: 4px;
+  padding: 10px;
+  right: 20px;
+}
+.form-button{
+    display: flex;
+    flex-direction: column;
+}
+.footer_caption{
+    font-size: 35px;
+}
+.foote_text{
+    width: 300px;
+    color: #fff;
+}
+.time{
+    bottom: -10%;
+    left: -200%;
+    color: antiquewhite;
+   
+}
+}
+@media screen and (min-width :901px) and (max-width: 1023px){
+    .Dash{
+        position: relative;
+        right: -30%;
+    }
+    .icon{
+        position: relative;
+        right: 0%;
+    }
+   
+    nav,.header,.hlinks,.alinks{
+        gap:5px;
+       }
+    .hlinks{
+        font-size: 1.2rem;
+        padding: 5px;
+       }
+       .alinks{
+        font-size:1rem;
+        padding: 5px;
+    }
+      .refer{
+        font-size: 150%;
+    }
+    .foote_text{
+        width: 250px;
+        color: #fff;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 899px){
+    nav{
+        display:flex;
+        width: 100%;
+        height: 10vh;
+    }
+   
+    .reviewItems img{
+        width:150px;
+        height:150px;
+        border-radius:105px;
+        align-items: center;
+        border: 3px solid blue;
+        gap:20px;
+        justify-content: center;
+       }
+
+       .pLinks{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #5a7184;
+        top: 10%;
+        height: 70vh;
+        right: -100%;
+        padding: 20px;
+        overflow: hidden;
+        z-index: 2;
+        border-radius: 10px;
+        transition: 1.5s ease-in-out;
+    }
+    .activate{
+        display: flex;
+        position: fixed;
+        right: 0%;
+        transition: 1.5s ease-in-out;
+    }
+    .alinks{
+       color: whitesmoke;
+    }
+    .menu{
+        display: initial;
+        position: relative;
+        left: 150%;
+        padding: auto;
+        border: 2px silver solid;
+        border-radius: 5px;
+    }
+    .icon{
+        position: relative;
+        left: 0%;
+    }
+    .Dash_Links{
+        display: none;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 45px;
+        position: relative;
+        left: 70%;
+        width: 20%;
+        background-color: #fefefe;
+      border-radius: 4px;
+      padding: 10px;
+    }
+    .form-button{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 100%;
+}
+.foote_text{
+    width: 150px;
+    color: #fff;
+}
+.form-button{
+    display: flex;
+}
+.contacts{
+    display:flex;
+    color:white;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 20px;
+    margin-bottom: 0;;
+  
+}
+.contacts img{
+    width: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    gap:20px;
+}
+.contact-text{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+    
+}
+}
+@media screen and (min-width: 501px) and (max-width: 767px){
+    nav{
+        display:flex;
+        width: 100%;
+        height: 20vh;
+    }
+   .pLinks{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #5a7184;
+        top: 10%;
+        height: 70vh;
+        right: -100%;
+        padding: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: 1.5s ease-in-out;
+    }
+    .activate{
+        display: flex;
+        position: fixed;
+        right: 0%;
+        transition: 1.5s ease-in-out;
+    }
+    .alinks{
+       color: whitesmoke;
+    }
+    .more{
+        padding:5px;
+     align-items: center;
+     justify-content: center;
+        font-size:10px;
+        border-radius:10px;
+    }
+    .more:hover{
+        transform: scale(1.05);
+    }
+    .cardtext{
+        display:block;
+        position:relative;
+        top:0%;
+        left:10%;
+        padding:10px;
+        color:black;
+        font-size:20px;
+    }
+    .menu{
+        display: initial;
+        position: relative;
+        left: 150%;
+        padding: auto;
+        border: 2px silver solid;
+        border-radius: 5px;
+    }
+    .icon{
+        position: relative;
+        left: 0%;
+    }
+    .Dash_Links{
+        display: none;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 45px;
+        position: relative;
+        left: 55%;
+        width: 30%;
+        background-color: #fefefe;
+      border-radius: 4px;
+      padding: 10px;
+    }
+    .form-button{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0%;
+}
+.foote_text{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.time{
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    margin: 20px;
+    color: antiquewhite;
+   
+}
+.contacts{
+    display:flex;
+    color:white;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 10px;
+    margin-bottom: 0;;
+  
+}
+.contacts img{
+    width: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    gap:20px;
+}
+.contact-text{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    text-align: center;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.footer_caption{
+    margin-top: 10px;
+    align-items: center;
+   text-align: center;
+    font-size: 50px;
+}
+.footer-body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.footer_text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.review{
+    position: relative;
+    overflow: hidden;
+    }
+    .reviewHead{
+        font-size: 4rem;
+        text-align: center;
+    
+    }
+    .reviewItems{
+        border: 5px solid gold;
+        background-color: silver;
+        border-radius: 25px;
+      padding: 15%;
+      margin-left:10px;
+    }
+    .reviewItems img{
+     width:100px;
+     height:100px;
+     border-radius:105px;
+     align-items: center;
+     border: 3px solid blue;
+     gap:20px;
+     justify-content: center;
+    }
+    .reviewText{
+        margin-top: 5%;
+        padding: 5%;
+        background:beige;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 500px){
+    nav{
+        display:flex;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+    }
+    .pLinks{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #5a7184;
+        top: 10%;
+        height: 70vh;
+        right: -100%;
+        padding: 20px;
+        overflow: hidden;
+        z-index: 2;
+        border-radius: 10px;
+        transition: 1.5s ease-in-out;
+    }
+    .activate{
+        display: flex;
+        position: fixed;
+        right: 0%;
+        transition: 1.5s ease-in-out;
+    }
+    .hero-text h1{
+        font-size:3rem;
+        text-align:center;
+        color: rgb(245, 188, 188);
+        display: flex;
+        align-items: center;
+          justify-content: center;
+    }
+    .hero-text p{
+        font-size: 1.5rem;
+        color:rgb(245, 160, 160);
+        text-align:flex-start;
+        padding-left: 5%;
+        word-spacing: 10px;
+    }
+    .try{
+        position: relative;
+        color: red;
+        left: 90px;
+        letter-spacing:5px;
+    }
+    .hero_btc{
+        color:red;
+        
+        font-size: 10px;
+        margin-top:25px;
+        position:relative;
+        left: 20%;
+        background: white;
+        padding: 20px 20px;
+        border: none;
+        border-radius:20px;
+        transition: 1s ease-in-out;
+    }
+    .hero_btc:hover{
+        background-color: blue;
+        transform:scale(1.2);
+        border-radius:30px;
+       
+    }
+    .footer_caption{
+        margin-top: 10px;
+        align-items: center;
+       text-align: center;
+        font-size: 50px;
+    }
+    .footer-body{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .footer_text{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .alinks{
+       color: whitesmoke;
+    }
+    .menu{
+        display: initial;
+        position: relative;
+        left: 10%;
+        padding: auto;
+        border: 2px silver solid;
+        border-radius: 5px;
+    }
+    .icon{
+        position: relative;
+        left: 0%;
+    }
+    .Dash_Links{
+        display: none;
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 45px;
+        position: relative;
+        left: 50%;
+        width: 30%;
+        background-color: #fefefe;
+      border-radius: 4px;
+      padding: 10px;
+    }
+    .form-button{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0%;
+}
+
+.time{
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    margin: 20px;
+    color: antiquewhite;
+   
+}
+    .form-button{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 30%;
+}
+.foote_text{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.form-button{
+    display: flex;
+}
+.contacts{
+    display:flex;
+    color:white;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 10px;
+    margin-bottom: 0;;
+  
+}
+.contacts img{
+    width: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    gap:20px;
+}
+.contact-text{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    text-align: center;
+    
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    gap: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+.footer_caption{
+    margin-top: 10px;
+   text-align: center;
+    font-size: 50px;
+}
+.footer-body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+    .reviewHead{
+        font-size: 2rem;
+        text-align: center;
+    
+    }
+
+    .reviewItems img{
+     width:70px;
+     height:70px;
+     border-radius:105px;
+     align-items: center;
+     border: 3px solid blue;
+     gap:20px;
+     justify-content: center;
+    }
+    .reviewText{
+        margin-top: 5%;
+        padding: 5%;
+        background:beige;
+        align-items: center;
+    }
+ 
+}

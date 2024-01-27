@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form_tem.css" type="text/css">
+</head>
+<body>
+    <div class = "Forms ">
+        <div class="form-button">
+        <button class="sign">SIGN UP</button>
+       <button class="login">Login in</button>
+       
+    
+    </div>
+        <div class = "Signup">
+            <form method = "post" action = "signup.php" class="content">
+                <h2><span class="under">Re</span>gistration Form</h2>
+                <button class="close">&times;</button>
+                <label>
+                    <h1>Personal Details</h1>
+                </label> 
+                <div class="form_con">         
+                <label>
+                    <p class="f_link">First Name</p>
+                   
+                    <input type="text" name="FirstName">
+                                     <i></i>
+                </label>
+                <label>
+                    <p class="f_link">Last Name</p>
+                
+                    <input type="text" name="LastName">
+                    <i></i>
+                </label>                 
+                <label>
+                    <p class="f_link">Username</p>
+                 
+                    <input type="text" name="Username">
+                    <i></i>
+                </label>
+                <br>
+            </div>
+            <div class="form_con">
+                <label>
+                    <p class="f_link">Email</p>
+                    
+                    <input type="email" name="Email">
+                    <i></i>
+                </label>                    
+                <label>
+                    <p class="f_link">Phone Number</p>
+                    <input type="text" name="PhoneNumber">
+                    <i></i>
+                </label>
+                <label>
+                    <p class="f_link">Age</p>
+                    <input type="text" name="Age">
+                    <i></i>
+                </label>
+                <br>
+                <label>
+                    <p class="f_link gender">Gender</p>
+                   <select Name="Gender">
+                    <br>
+                    <option selected disabled > Choose ....</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                   </select>
+                    </label>
+                <br></div>
+                <label>
+                    <h1>Identity Details</h1>
+                </label>
+                <div class="form_con">
+                
+                <label>
+                    <p class="f_link">Nationality</p>
+                    <select name="Nationality">
+                        <option selected disabled value="">Choose...</option>
+                        <option>United state of America</option>
+                        <option>Ghana</option>
+                        <option>Nigeria</option>
+                        <option>Cameroon</option>
+                        <option>Niger</option>
+                        <option>France</option>
+                        <option>South Sudan</option>
+                        <option>South Africa</option>
+                        <option>Brazil</option>
+                        <option>Canada</option>
+                        <option>mexico</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>Poland</option>
+                        <option>Russia</option>
+                        <option>Ukraine</option>
+                        <option>India</option>
+                        <option>China</option>
+                    </select>
+                    <i></i>
+                </label>
+                <label>
+                    <p class="f_link">State</p>
+                    <input type="text" name="State">
+                    <i></i>
+                </label>
+                    <label>
+                        <p class="f_link">Zip Code</p>
+                        <input type="text" name="ZipCode">
+                        <i></i>
+                    </label>
+                    <br></div>
+                    <div class="form_con">
+                    <label>
+                        <p class="f_link">Enter Password</p>
+                        <input type="password" name="F_Password">
+                        <i></i>
+                    </label>
+                    <label>
+                        <p class="f_link">Confirm Password</p>
+                        <input type="password" name="Password">
+                        <i></i>
+                    </label></div>
+                    <button type="submit" name="signup" class="register">Sign up</button>
+            </form>
+        </div>
+        <div id="SignIn">
+           
+            <form method = "post" action = "signin.php" class="content signin">
+                   <h1>LOGIN FORM</h1>
+                <button class="close">&times;</button>
+                <label>
+                    <p class="f_link">Email</p>
+                    <input type="email" name="Email">
+                    <i></i>
+                </label>
+                <label>
+                    <p class="f_link">Password</p>
+                    <input type="password" name="Password">
+                    <i></i>
+                </label> 
+                <br>
+                <button type="submit" name="signin" class="loginin">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const register = document.querySelector('.sign');
+const logi = document.querySelector(".login");
+const close = document.querySelector(".close");
+const signup = document.querySelector('.Signup');
+const sign_in = document.querySelector('#SignIn');
+const btc = document.querySelector('.hero_btc');
+register.addEventListener('click', ()=>{
+    signup.classList.add('active');
+})
+logi.addEventListener("click", ()=>{
+    sign_in.classList.toggle('active')
+})
+btc.addEventListener("click", ()=>{
+    sign_in.classList.toggle('active')
+})
+
+close.addEventListener('click', ()=>{
+    signup.classList.remove("active");
+    sign_in.classList.remove("active");   // remove class from the element
+})
+
+window.onclick = function(event) {
+    if (event.target == signup) {
+        signup.classList.remove("active");
+    }
+    else if(event.target == sign_in){
+        sign_in.classList.remove("active")
+    }
+  }
+    </script>
+</body>
+</html>
